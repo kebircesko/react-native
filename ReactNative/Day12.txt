@@ -1,0 +1,43 @@
+  API
+
+https://reactnative.dev/docs/network
+
+https://mocki.io/fake-json-api
+
+//Krijimi i JSON filet
+[
+  {
+    "country":"United States",
+    "city":"New York"
+  },
+  {
+    "country":"Australia",
+    "city":"Sydney"
+  },
+  {
+    "country":"Germany",
+    "city":"Berlin"
+  },
+  {
+    "country":"France",
+    "city":"Paris"
+  }
+]
+
+
+
+
+
+
+
+Local and Scheduled Push Notification
+
+//linku i pergjithshem per notification
+https://github.com/zo0r/react-native-push-notification
+
+npm install --save react-native-push-notification
+
+//Liku per ios notification
+https://github.com/react-native-push-notification/ios
+
+npm i @react-native-community/push-notification-ios --save

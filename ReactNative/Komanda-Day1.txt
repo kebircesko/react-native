@@ -1,0 +1,40 @@
+//Instalimi i Node.js
+
+//Instalimi i GIT
+
+//Instalimi i VSCode
+
+-Perdoret si editor per te shenuar kodin
+
+//Instalimi i Extensions
+  
+  React Native Tools
+  ES7 React/Redux/GraphQL/React-Native snippets
+  Simple React Snippets
+
+//Instalimi i Expo
+
+ //Ne cmd ose Git
+ 
+   npm install -g expo-cli
+
+//Krijmimi i nje projekti ne React Native
+  
+  //komanda kryesore per krijimin e nje projekti me Expo
+  npx create-expo-app emriprojektit 
+  
+  //shkurtes per krijimin e nje projekti me expo
+  expo init emriiprojektit   
+
+ //New komand
+ npx create-expo-app emriProjektit --template
+
+  //Komanda per krijimin e nje projekti ne React Native pa expo
+  npx react-native init emriprojektit  
+
+  //Zgjidhet opsioni i pare blank
+  //zgjidhet yes
+
+
+//Nese shfaqen probleme me Node.js
+ Set-ExecutionPolicy RemoteSigned (vendoset tek PowerShell "Run as admin")

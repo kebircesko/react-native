@@ -1,0 +1,8 @@
+SQLite
+
+sqlite.org
+sqlitetutorial.net
+
+npm install --save react-native-sqlite-storage
+
+https://www.npmjs.com/package/react-native-sqlite-storage

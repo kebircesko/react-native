@@ -1,0 +1,33 @@
+// instalimi i folderit te ri
+
+//instalimi i expo
+npm install -g expo-cli
+npm install -g expo-cli@latest
+
+//upgrade expo
+expo upgrade  //ne CMD
+npm install expo@latest
+
+// Navigation
+
+//instalimi i navigation
+npm install @react-navigation/native
+
+//Stack Navigation
+npm install @react-navigation/native-stack
+
+// React Native Screens
+npx expo install react-native-screens react-native-safe-area-context 
+
+npm install react-native-screens react-native-safe-area-context
+
+
+//Per krijimin e kodit ne React Native mund te perdorim edhe disa shkurtesa
+
+rnf - React Native Functionctional Component
+
+rnc - React Native Component
+
+
+
+

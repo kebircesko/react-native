@@ -1,0 +1,43 @@
+Error: [Reanimated] Failed to create a worklet. See https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#failed-to-create-a-worklet for more details., js engine: hermes
+at node_modules\react-native\Libraries\Core\ExceptionsManager.js:null in reportException
+at node_modules\react-native\Libraries\Core\ExceptionsManager.js:null in handleException
+at node_modules\react-native\Libraries\Core\setUpErrorHandling.js:null in handleError
+at node_modules\expo\build\errors\ExpoErrorManager.js:null in createErrorHandler
+at node_modules\expo\build\errors\ExpoErrorManager.js:null in <anonymous>
+at node_modules\@react-native\js-polyfills\error-guard.js:null in ErrorUtils.applyWithGuard
+at node_modules\metro-runtime\src\polyfills\require.js:null in guardedLoadModule
+at http://192.168.0.111:19000/node_modules%5Cexpo%5CAppEntry.bundle?platform=ios&dev=true&hot=false&strict=false&minify=false:null in metroRequire
+at http://192.168.0.111:19000/node_modules%5Cexpo%5CAppEntry.bundle?platform=ios&dev=true&hot=false&strict=false&minify=false:null in global
+
+Invariant Violation: "main" has not been registered. This can happen if:
+* Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.
+* A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called., js engine: hermes    
+at node_modules\react-native\Libraries\Core\ExceptionsManager.js:null in reportException
+at node_modules\react-native\Libraries\Core\ExceptionsManager.js:null in handleException
+- ... 7 more stack frames from framework internals
+
+
+
+zgjidhja 
+
+tek file bable.config.json vendoset ky kodi
+
+plugins: [
+      [
+        "module-resolver",
+        {
+          extensions: [".tsx", ".ts", ".js", ".json"],
+        },
+      ],
+      "react-native-reanimated/plugin",
+    ],
+
+
+npm install react-native-reanimated
+
+
+npx expo install expo@51.0.36 react-native-gesture-handler@2.16.1 react-native-reanimated@3.10.1
+
+npx expo start -c
+
+npm install --save-dev babel-plugin-module-resolver

@@ -1,0 +1,9 @@
+Redux - State Management
+
+npm install redux
+
+npm install react-redux
+
+npm install redux-thunk
+
+npm install @react-native-async-storage/async-storage

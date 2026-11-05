@@ -1,0 +1,19 @@
+Day 13
+
+1. nativenotify.com
+2. Hapim nje acc
+3. Krijimi i nje app
+4. Ndjekja e hapave ose komandave me poshte
+   	npm install native-notify
+	npx expo install expo-device expo-notifications
+
+5. importimi i paketes Native-notify
+	import registerNNPushToken from 'native-notify';
+
+6. Krijimi i eas bulid (per versionet mbi 49+)
+   eas build
+   //https://docs.expo.dev/build/setup/
+
+	- npm install -g eas-cli
+	- eas login
+        - eas build:configure

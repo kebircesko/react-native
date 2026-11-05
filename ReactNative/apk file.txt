@@ -1,0 +1,10 @@
+Apk File
+
+
+1. eas build:configure
+
+2. eas build --platform android
+
+3. expo build:android
+
+4. 

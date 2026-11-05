@@ -1,0 +1,55 @@
+import React, { useState, useEffect } from 'react';
+import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import axios from 'axios';
+
+const API_KEY = '19c53d830458075a54d21b1f1bd81baf';
+
+const App = () => {
+  const [city, setCity] = useState('Prizren');
+  const [weather, setWeather] = useState(null);
+
+  const fetchWeather = async () => {
+    try {
+      const response = await axios.get(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+      );
+      setWeather(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchWeather();
+  }, []);
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Weather App</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Shkruaj qytetin..."
+        value={city}
+        onChangeText={setCity}
+      />
+      <Button title="Merr motin" onPress={fetchWeather} />
+      {weather && (
+        <View style={styles.weatherInfo}>
+          <Text style={styles.infoText}>Temperatura: {weather.main.temp}°C</Text>
+          <Text style={styles.infoText}>Lagështia: {weather.main.humidity}%</Text>
+          <Text style={styles.infoText}>Përshkrimi: {weather.weather[0].description}</Text>
+        </View>
+      )}
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  title: { fontSize: 24, fontWeight: 'bold', marginBottom: 20 },
+  input: { borderColor: 'gray', borderWidth: 1, padding: 10, marginBottom: 10, width: 200 },
+  weatherInfo: { marginTop: 20 },
+  infoText: { fontSize: 18 },
+});
+
+export default App;

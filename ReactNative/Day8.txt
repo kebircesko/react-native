@@ -1,0 +1,21 @@
+Google fonts
+
+download fonts me i bo
+
+krijimi i file react-native.config.js
+
+npx react-native-asset
+
+
+//menyra dyte
+
+
+npm install @expo-google-fonts/dancing-scripts
+
+
+npm install @react-navigation/native
+npm install @react-navigation/bottom-tabs
+npx expo install react-native-screens react-native-safe-area-context 
+npm install @expo/vector-icons
+npm install @react-navigation/drawer
+npx expo install react-native-gesture-handler react-native-reanimated react-native-worklets
