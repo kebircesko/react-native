@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "dita16_sqlite",
+    "slug": "dita16_sqlite",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-sqlite",
+      "expo-status-bar"
+    ]
+  }
+}

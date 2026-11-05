@@ -1,0 +1,28 @@
+komanda per me kriju react-native me typescript:
+npx create-expo-app@latest FirstApp (typescript codi)
+
+//Komanda me javascript React Native
+npx create-expo-app emriProjektit --template
+
+nese nuk hapet ne web atehere provoje kete:
+npx expo install react-dom react-native-web
+
+start per ReactNative
+npm start
+
+nese nuk hapet ne telefon kur e skanon:
+npm start -- --tunnel --clear
+
+Nese ka problem ne linux instaloje kete ne terminal
+sudo npm install -g @expo/ngrok
+
+Pastaj sa herë që don me hap projektin në Expo Go dhe LAN-i të bën problem, përdor:
+npx expo start --tunnel
+
+
+Nese ka prap probleme qe nuk bon ne tel expo go:
+Një alternativë tjetër: Përmirëso projektin në SDK 58
+Nëse nuk dëshiron të menaxhosh versionin e Expo Go, mund ta përmirësosh projektin direkt në SDK 58 që të përputhet me telefonin.
+Në drejtorinë e projektit ekzekuto: npm install expo@^58.0.0.
+Pastaj ekzekuto npx expo install --fix për të përditësuar varësitë e tjera në versionet përkatëse.
+Fshi dosjet node_modules dhe .expo, pastaj ekzekuto përsëri npm install dhe npx expo start.
